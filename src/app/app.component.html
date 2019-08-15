@@ -1,0 +1,9 @@
+<input type="file" id="selectFile" (change)="readFile($event.target.files)">
+
+<div>
+  <h3>File Content</h3>
+  <!-- <pre> {{fileContent}} </pre> -->
+</div>
+
+<button (click)="saveFiles()">saveFile</button>
+<router-outlet></router-outlet>
